@@ -69,9 +69,11 @@ https://192.168.0.24:5000/mqtt/test
       topic: 'mqtt/demo',
       payload: 1
       }
- - with json body to switch off:
- 
+
+- with json body to switch on:
+
       {
       topic: 'mqtt/demo',
       payload: 0
       }
+
