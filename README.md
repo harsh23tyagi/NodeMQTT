@@ -39,7 +39,7 @@ You should see the output on the subscriber terminal:
 
 ## Raspberry Pi Setup
 
-### The 'mqtt.py' file in the above package can be removed from the node application and put in the RPi
+### The 'mqtt.py' file in the above package should be removed from the node application and put in the RPi
 
 - I am using Raspberry Pi 3
 - The basic setup is: using the breadboard i have connected one LED with a resistor to pin 4(BCM notation) of RPi
