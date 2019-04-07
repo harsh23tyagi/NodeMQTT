@@ -1,0 +1,25 @@
+{
+  "name": "rpi_one",
+  "version": "1.0.0",
+  "description": "Kick off RPi",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "mqtt": "node mqttClient.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.4.22",
+    "mqtt": "^2.18.8",
+    "nodemon": "^1.18.10",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.11.0"
+  }
+}
