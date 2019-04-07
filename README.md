@@ -31,8 +31,8 @@ Create a publisher in another terminal:
 - mosquitto_sub -h 192.168.0.24 -t "mqtt_topic" -m "hello world"
 
 You should see the output on the subscriber terminal:
-PS: In windows, you might have to work on a derived terminal for mosquitto, which is on their website.
-MAC and linux can directly connect using the above commands
+
+##### PS: In windows, you might have to work on a derived terminal for mosquitto, which is on their website.MAC and linux can directly connect using the above commands
 
 ## Raspberry Pi Setup
 
