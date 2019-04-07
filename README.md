@@ -9,6 +9,9 @@
 - Node.js (with express)
 - Python (for Creating subscriber in RPi)
 - Mosquitto broker and clients
+- Postman (To make Microservice requests, since we dont have a frontend to the node app)
+
+## OBJECTIVE: To control the LED on Raspberry PI using Node application via URL/Microservices
 
 ### Read all the comments in the node application files and mqtt.py files for dependency setup and running the code
 
@@ -45,3 +48,22 @@ You should see the output on the subscriber terminal:
 - Install paho for python 
 - All the steps are mentioned clearly in comments in the file mqtt.py 
 - remove mqtt.py from the node application and put it in the raspberry pi and run it
+
+# Running the App
+
+The node module doesn't have a front end yet:
+
+- You can use Postman for making a url request to publish data to broker which will control the LED on Raspberry Pi
+eg. a post request:
+https://192.168.0.24:5000/mqtt/test
+
+- with json body to switch on:
+      {
+      topic: 'mqtt/demo',
+      payload: 1
+      }
+ - with json body to switch off:
+      {
+      topic: 'mqtt/demo',
+      payload: 0
+      }
