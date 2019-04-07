@@ -1,6 +1,16 @@
 # Node Application with MQTT protocol connected to a Raspberry Pi
 
 ~ Created by @HarshTyagi
+~ Two segments to the application:
+- Node Application
+- Raspberry Pi: mqtt.py file in the above package should be removed from node application and put in RPi
+
+~ Tech stack used:
+- Node.js (with express)
+- Python (for Creating subscriber in RPi)
+- Mosquitto broker and clients
+
+### Read all the comments in the node application files and mqtt.py files for dependency setup and running the code
 
 ## Node Application
 
