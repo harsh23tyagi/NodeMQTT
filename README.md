@@ -49,6 +49,12 @@ You should see the output on the subscriber terminal:
 - All the steps are mentioned clearly in comments in the file mqtt.py 
 - remove mqtt.py from the node application and put it in the raspberry pi and run it
 
+### Change the broker_address as your laptop's IP address in mqtt.py
+
+## mqtt.py Working:
+- if payload = 1 for topic 'mqtt/demo': the LED switches on
+- if payload = 0 for topic 'mqtt/demo': the LED switches off
+- if payload is anything else for topic 'mqtt/demo': the python code quits
 # Running the App
 
 The node module doesn't have a front end yet:
@@ -58,11 +64,13 @@ eg. a post request:
 https://192.168.0.24:5000/mqtt/test
 
 - with json body to switch on:
+
       {
       topic: 'mqtt/demo',
       payload: 1
       }
  - with json body to switch off:
+ 
       {
       topic: 'mqtt/demo',
       payload: 0
