@@ -25,7 +25,8 @@
 ##### Go to ifconfig or ipconfig and get the IP address of your machine- using 192.168.0.24 for instance
 
 Create a subscriber in one terminal:
-- mosquitto_sub -h 192.168.0.24 -t "mqtt_topic" 
+- mosquitto_sub -h 192.168.0.24 -t "mqtt_topic"
+
 Create a publisher in another terminal:
 - mosquitto_sub -h 192.168.0.24 -t "mqtt_topic" -m "hello world"
 
